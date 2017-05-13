@@ -1,4 +1,2 @@
 # ApiOracleExport
-Simple Export Oracle to MySQL
-
-Dump file from Oracle Database selected table to MySQL format
+Dump file selected table from Oracle Database to MySQL format
