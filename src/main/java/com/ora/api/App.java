@@ -15,12 +15,13 @@ public class App
         }else{
         	args = new String[3];
         
-	        args[0]="jdbc:oracle:thin:@10.251.38.228:1521:ODUXP|uat_mappingtools|uat_mappingtools";
+	        args[0]="jdbc:oracle:thin:@10.251.38.228:1521:ODUXP;uat_mappingtools;uat_mappingtools";
 	        args[1]="PROD10MAY_SERVICES_TALKMANIA";
-	        args[2]="D://webapps/juliet/temp/"+args[1]+".sql";
+	        args[2]="SERVICES_TALKMANIA";
+	        args[3]="D://webapps/juliet/temp/"+args[1]+".sql";
         }
         
-        OracleJDBC ora=new OracleJDBC(args[0],args[1],args[2]);
+        OracleJDBC ora=new OracleJDBC(args[0],args[1],args[2], args[3]);
         ora.init();
         
     }
